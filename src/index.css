@@ -1,0 +1,74 @@
+.mapContainer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position:absolute;
+}
+
+.info{
+  position:fixed;
+  top:20px;
+  left:20px;
+  baground-color: rbga( 0,0,0,0.5);
+  color:white;
+  padding:10px;
+  border-radius:5px;
+  z-index:99;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Animación personalizada para aparecer desde abajo */
+/* .animate-fade-up {
+  opacity: 0; /* Inicialmente invisible */
+  /* transform: translateY(50px); /* Empieza desde abajo */
+  /* transition: opacity 0.5s ease, transform 0.5s ease; */
+/* } */ 
+
+/* .animate-fade-up.visible {
+  opacity: 1; /* Se hace visible */
+  /* transform: translateY(0); /* Llega a su posición original */
+/* } */
+
+
+@keyframes show{
+
+  from{
+    opacity:0;
+    scale:10%;
+  }
+  to{
+    opacity:1;
+    scale:100%;
+  }
+
+}
+
+img{
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+h3{
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+p{
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
