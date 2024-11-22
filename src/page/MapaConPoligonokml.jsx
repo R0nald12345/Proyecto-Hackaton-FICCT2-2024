@@ -52,7 +52,6 @@ const MapaConPoligonokml = () => {
     <div className="relative w-full h-screen">
       <div ref={mapContainerRef} className="w-full h-full" />
       
-      
     </div>
   );
 };

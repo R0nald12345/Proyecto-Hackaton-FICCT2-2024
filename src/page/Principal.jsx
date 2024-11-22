@@ -51,37 +51,11 @@ const Principal = () => {
                     Ciudadano
                   </Link>
 
-                  {/* Administracion con Dropdown */}
-                  <div
-                    className="relative"
-                    onMouseEnter={() => setOpenDropDown(true)} // Mostrar el dropdown al pasar el mouse
-                    onMouseLeave={closeDropDown} // Cerrar el dropdown al salir del área
-                  >
-                    <button
-                      onClick={closeDropDown} // Mostrar/ocultar al hacer clic
-                      className="font-geist font-bold text-white hover:text-yellow-300 focus:outline-none"
-                    >
-                      Administración
-                    </button>
+                  <Link to={'https://zesty-fairy-68ce64.netlify.app/'} className="font-geist font-bold text-white hover:text-yellow-300">
+                    Administrativo
+                  </Link>
 
-                    {openDropDown && (
-                      <ul className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-20">
-                        <li className="px-4 py-2 hover:bg-gray-500">
-                          <Link to="/#" className="font-geist">
-                            Reforestación
-                          </Link>
-                        </li>
-                        <li className="px-4 py-2 hover:bg-gray-500">
-                          <Link
-                            to="/#"
-                            className="font-geist"
-                          >
-                            Seguridad Ciudadana
-                          </Link>
-                        </li>
-                      </ul>
-                    )}
-                  </div>
+                 
                 </div>
               </section>
             </section>

@@ -51,6 +51,7 @@ const Mapa = () => {
     }
   }, [kmlFiles, extraerCoordenadas]);
 
+  
   const zoomIn = () => {
     if (mapa.current) {
       mapa.current.zoomIn();
